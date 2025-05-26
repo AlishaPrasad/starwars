@@ -21,6 +21,7 @@ export const Header = ({ setSearchText, setSortField }: HeaderProps) => {
         >
           <option value="year">Year</option>
           <option value="episode">Episode</option>
+          <option value="rating">Rating</option>
         </select>
       </div>
       <div className="p1">

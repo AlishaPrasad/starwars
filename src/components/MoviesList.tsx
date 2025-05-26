@@ -67,6 +67,12 @@ const MoviesList = ({ searchText, sortField }: MoviesListProps) => {
         );
         updatedMovies = sortedByYear;
         break;
+      case "rating":
+        const sortedByRating = [...updatedMovies].sort(
+          (a: Movie, b: Movie) => b.averageRating - a.averageRating
+        );
+        updatedMovies = sortedByRating;
+        break;
     }
 
     setRefinedMovies(updatedMovies);
