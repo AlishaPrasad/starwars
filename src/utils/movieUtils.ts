@@ -45,7 +45,7 @@ export const formatRatingValue = (value: string, sign: string) => {
     return `${value.split("/")[0]}${sign}`;
   }
   if (value.includes("/10")) {
-    return `${parseInt(value.split("/")[0]) * 10}${sign}`;
+    return `${parseFloat(value.split("/")[0]) * 10}${sign}`;
   }
   return sign ? value : value.split("%")[0];
 };

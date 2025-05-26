@@ -29,9 +29,9 @@ const MoviesList = ({ searchText, sortField }: MoviesListProps) => {
           const omdbData = await getOmdbData(getIMDBId(movie.episode_id));
           return {
             ...movie,
-            ratings: omdbData.Ratings,
-            averageRating: calculateAvergaRating(omdbData.Ratings),
-            poster: omdbData.Poster,
+            ratings: omdbData?.Ratings,
+            averageRating: calculateAvergaRating(omdbData?.Ratings),
+            poster: omdbData?.Poster,
             title: `Episode ${convertToRomanNumber(movie.episode_id)} - ${
               movie.title
             }`,

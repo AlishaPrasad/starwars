@@ -7,15 +7,19 @@ export const getMoviesList = async () => {
 
     return data.results;
   } catch (e) {
-    console.log("Error fetching movies list");
+    console.log("Error fetching movies list", e);
   }
 };
 
 export const getOmdbData = async (imdbId: string) => {
-  const response = await fetch(
-    `http://www.omdbapi.com/?apikey=b9a5e69d&i=${imdbId}`
-  );
-  const data = await response.json();
-  const { Poster, Ratings } = data;
-  return { Poster, Ratings };
+  try {
+    const response = await fetch(
+      `http://www.omdbapi.com/?apikey=b9a5e69d&i=${imdbId}`
+    );
+    const data = await response.json();
+    const { Poster, Ratings } = data;
+    return { Poster, Ratings };
+  } catch (e) {
+    console.log("Error fetching OMDB data", e);
+  }
 };

@@ -6,7 +6,7 @@ interface StarProps {
 export const Star = ({ filled }: StarProps) => {
   return (
     <>
-      <FaStar color={filled ? "orange" : "lightgray"} />
+      <FaStar style={{ color: filled ? "orange" : "lightgray" }} />
     </>
   );
 };

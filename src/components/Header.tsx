@@ -7,7 +7,7 @@ export const Header = ({ setSearchText, setSortField }: HeaderProps) => {
   return (
     <div className="p1 background-grey flex">
       <div className="p1">
-        <label htmlFor="sort" className="p0_5">
+        <label htmlFor="sort_by" className="p0_5">
           Sort by:
         </label>
         <select
