@@ -10,3 +10,12 @@ export const getMoviesList = async () => {
     console.log("Error fetching movies list");
   }
 };
+
+export const getOmdbData = async (imdbId: string) => {
+  const response = await fetch(
+    `http://www.omdbapi.com/?apikey=b9a5e69d&i=${imdbId}`
+  );
+  const data = await response.json();
+  const { Poster, Ratings } = data;
+  return { Poster, Ratings };
+};
