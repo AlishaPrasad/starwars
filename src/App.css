@@ -38,6 +38,11 @@ input {
   padding: 1rem;
 }
 
+.grey {
+  color: grey;
+  font-style: italic;
+}
+
 .background-grey {
   background-color: lightgrey;
 }

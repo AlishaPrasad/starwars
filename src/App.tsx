@@ -2,17 +2,20 @@ import { useState } from "react";
 import "./App.css";
 import { Header } from "./components/Header";
 import MoviesList from "./components/MoviesList";
-import { Outlet } from "react-router-dom";
+import { Outlet, useParams } from "react-router-dom";
+import { DefaultMessage } from "./components/DefaultMessage";
 
 function App() {
   const [searchText, setSearchText] = useState("");
   const [sortField, setSortField] = useState("");
+  const { id } = useParams();
 
   return (
     <>
       <Header setSearchText={setSearchText} setSortField={setSortField} />
       <div className="flex h100">
         <MoviesList searchText={searchText} sortField={sortField} />
+        {!id && <DefaultMessage />}
         <Outlet />
       </div>
     </>
