@@ -1,6 +1,9 @@
 # STARWARS
 
 This application lists all movies and details of the Starwars saga.
+You can filter by the movie title and sort by year, episode or rating.
+
+This application has been created using React, React Router, Redux, Typescript, HTML and CSS (responsive UI). Error boundary has been used for error handling and memoization for performance optimization. RTL has been used for unit tests.
 
 ## Available Scripts
 
