@@ -1,4 +1,4 @@
-import { store } from "./store";
+import { store } from "../app/store";
 import { storeMoviesList } from "../Reducer/moviesSlice";
 
 describe("Redux Store", () => {

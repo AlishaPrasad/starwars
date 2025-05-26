@@ -1,4 +1,7 @@
-import moviesReducer, { storeMoviesList, getMovies } from "./moviesSlice";
+import moviesReducer, {
+  storeMoviesList,
+  getMovies,
+} from "../Reducer/moviesSlice";
 import { Movie } from "../types/movie.types";
 
 describe("moviesSlice", () => {

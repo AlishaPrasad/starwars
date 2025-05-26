@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import { Star } from "./Star";
+import { Star } from "../components/Star";
 describe("Star Component", () => {
   it("renders a filled star when 'filled' is true", () => {
     const { container } = render(<Star filled={true} />);

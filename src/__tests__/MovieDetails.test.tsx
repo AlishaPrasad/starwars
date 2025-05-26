@@ -3,7 +3,7 @@ import { render, screen } from "@testing-library/react";
 import { Provider } from "react-redux";
 import { MemoryRouter, Route, Routes } from "react-router-dom";
 import configureStore from "redux-mock-store";
-import MovieDetails from "./MovieDetails";
+import MovieDetails from "../components/MovieDetails";
 
 const mockStore = configureStore([]);
 const mockMovies = [

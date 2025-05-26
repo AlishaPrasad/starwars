@@ -1,4 +1,4 @@
-import { getMoviesList, getOmdbData } from "./movieService";
+import { getMoviesList, getOmdbData } from "../services/movieService";
 
 global.fetch = jest.fn();
 

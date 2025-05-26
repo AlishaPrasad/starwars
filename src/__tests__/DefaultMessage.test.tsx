@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import { DefaultMessage } from "./DefaultMessage";
+import { DefaultMessage } from "../components/DefaultMessage";
 
 describe("DefaultMessage Component", () => {
   it("renders the default message", () => {
